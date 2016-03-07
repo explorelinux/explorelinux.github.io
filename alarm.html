@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <title>alarm.html</title>
+    <style>
+      
+         
+
+         body{
+              border-top:90px solid rgb(45, 14, 64);
+              border-radius:30px;
+              background-color:rgb(187, 149, 214);
+              font-family:cursive;
+             }
+         #links{
+               
+               color:white;
+               background-color:rgb(45, 14, 64); 
+               
+               border:6px solid rgb(45, 14, 64);
+               border-radius:19px;
+               }
+
+            li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+
+            }
+          #company{
+                   color:white;
+                   font-size:60px;
+                   position:absolute;
+                   z-index:2;
+                   top:15px;
+                   left:800px;
+                   }
+          #link_head {
+                     font-size:30px;
+                     background-color:rgb(45, 14, 64);
+                     color:white;
+                     border:6px solid rgb(45, 14, 64);
+                     border-radius:66px;
+                     text-align:center;
+
+                     }
+          #left_bar{
+                    width:20%;
+
+                   }
+          a:hover{
+                  color:red;
+                 }
+          #workspaces{
+                      float:right;
+                      position:absolute;
+                      top:150px;
+                      left:300px;
+                     }
+      </style>
+       
+ </head>
+
+ <body>
+           
+          <p><em id="company">Explore Linux...</em></p><br>
+          <div id="left_bar">
+          <p id="link_head"><em>Useful Links</em></p>
+              <div id="links">
+                <ul>
+                       <li> <a href="index.html">Home</a><br></li>
+                       <li> <a href="workspaces.html">WorkSpaces</a><br></li>
+                       <li> <a href="launcher.html">Launcher</a><br></li>
+                       <li> <a href="software_centre.html">Software Centre</a><br></li>
+                       
+                       <li> <a href="bookmarks.html">Bookmarks</a><br></li>
+                       
+                       
+                </ul>        
+              </div> 
+          </div>
+      <div id="workspaces">
+          <p style="font-size:20px;color:rgb(45, 14, 64);"><strong>Follow the below mentioned steps to setup an alarm using Terminal.</strong><br></p>
+          <ol>
+            <li>Open the terminal by typing "Ctr+Alt+t".<br>
+                  <img src="https://cloud.githubusercontent.com/assets/14980760/11117003/580405ea-895c-11e5-9ed7-ca06e6158792.png" alt="Opening a Terminal" style="width:800px;margin:30px;">
+            </li>
+            <li>Type "crontab -e" in terminal.<br>
+                 <img src="https://cloud.githubusercontent.com/assets/14980760/11117229/dd191eb8-895d-11e5-9ca1-4d4de8fc840a.png" alt="Editing Crontab" style="width:800px;margin:30px;">
+                  
+            </li>
+            <li>A new page is displayed.(see the screenshot below).<br>
+                <img src="https://cloud.githubusercontent.com/assets/14980760/11117247/2263119a-895e-11e5-907c-51b1edac0e34.png" alt="see crontab -e" style="width:800px;margin:30px;">
+            </li>
+            <li>Now press "Down-Arrow key" to go to the bottom of the page.<br>
+              <img src="https://cloud.githubusercontent.com/assets/14980760/11117303/b9ea94e8-895e-11e5-818e-e1b545aa6695.png" alt="see bottom of crontab -e" style="width:800px;margin:30px;">
+            </li>
+            <li>In the last comment(A line which starts with # is called as a comment),"m","h","dom","mon","dow","command" represent "Minute","Hour","Date Of Month","Month","Day Of Week" and "Command to be Executed" respectively.<br>
+                <img src="https://cloud.githubusercontent.com/assets/14980760/11117356/224e18b6-895f-11e5-8c0c-7217a65b1955.png" alt="terminology" style="width:800px;margin:30px;">
+            </li>
+            <li><p>Now enter the particulars to open a music file(alarm) at this shedule.Range of Minutes is "00-59".Enter hours in 24 hours format i.e Range "00-23".Range of Date of month is "1-31".Range of month is "1-12".Range of day of week is "0(Sunday)-6(Saturday)".In command type "DISPLAY=:0.0 xdg-open song.mp3".<br></p>
+                            <p>       "DISPLAY=:0.0" links terminal with GUI(Graphical User Interface) i.e Displaying default Media player(In this case it is VLC Media Player)."xdg-open" opens a file in appropriate format(Text in an editor(say gedit),music file in a media player(Say VLC Media Player))."/home/saketh/song.mp3" is the path of a music file.<br></p>
+                            <p>       I have sheduled a task using crontab to open a music file(alarm) i.e song.mp3 on the 12th November,2015 at 5:15PM.<br></p>
+              <img src="https://cloud.githubusercontent.com/assets/14980760/11117983/6a138cbc-8964-11e5-81a1-87755c981f44.png" alt="Particulars" style="width:800px;margin:30px;">
+            </li>
+            <li>Now type "Ctr+x" to exit.<br>
+              <img src="https://cloud.githubusercontent.com/assets/14980760/11118441/f4a4d3e2-8967-11e5-9dd1-4c9455b1bd54.png" alt="On typing Ctr+x" style="width:800px;margin:30px;">
+            </li>
+            <li>Then type "y" to save the changes.<br>
+              <img src="https://cloud.githubusercontent.com/assets/14980760/11118512/6a7b7b70-8968-11e5-9967-aa49497c05e0.png" alt="On typing y." style="width:800px;margin:30px;">
+            </li>
+            <li>Finally press "Enter" to save the location(Please don't change the location).Crontab installs now.<br>
+              <img src="https://cloud.githubusercontent.com/assets/14980760/11118556/c1cb1656-8968-11e5-9d9b-34fdf3355944.png" alt="On pressing enter" style="width:800px;margin:30px;">
+            </li>
+            <li>At the sheduled time(or with a delay around 20 Seconds) the music file(song.mp3 in this case) will be opened(See the screenshot below and notice the time on top right corner)<br>
+              <img src="https://cloud.githubusercontent.com/assets/14980760/11118665/87c2ae82-8969-11e5-8886-ee244c9f639f.png" alt="Music file" style="width:800px;margin:30px;">
+            </li>
+            <li>If your system is off at sheduled time then type "anacron -n" before sheduled time so that the music file will be opened immediately when you turn on your system after sheduled time.<br>
+              <img src="https://cloud.githubusercontent.com/assets/14980760/11118759/5c95d724-896a-11e5-84d7-cf227baed133.png" alt="anacron -n on terminal" style="width:800px;margin:30px;">
+            </li>
+          </ol>  
+          <p style="margin:60px;text-align:center;"><a href="#company" style="font-size:20px;font-style:italic;">Go to top</a></p>
+
+      </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Pluto -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2565435688764536"
+     data-ad-slot="8444987001"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+       </body>       
+
+</html>
