@@ -1,83 +1,76 @@
 <!DOCTYPE html>
+
+
 <html>
- <head>
-  <meta charset="utf-8">
-   <title>launcher_answer_one.html</title>
+  <head>
+    <title>launcher_answer_one</title>
     <style>
+      body
+      {
+        font-size:15pt;
+        color:white;
+        font-family:cursive;
+        background-image:url(https://cloud.githubusercontent.com/assets/17701040/14019227/b5fbf33e-f1f7-11e5-8d12-78e616ac0f8a.jpg);
+        background-size:1340px;
       
-         
+        background-attachment:fixed;
+      }
 
-         body{
-              border-top:90px solid rgb(45, 14, 64);
-              border-radius:30px;
-              background-color:rgb(187, 149, 214);
-              font-family:cursive;
+      #container
+      {
+        background-color:rgba(0,0,0,0.35);
+        border:20px solid rgba(0,0,0,0.2);
+        border-radius:100px;
+        margin-left:300px;
+        margin-right:20px;
+        margin-top:80px;
+        padding:30px;
 
-             }
-         #links{
-               
-               color:white;
-               background-color:rgb(45, 14, 64); 
-               
-               border:6px solid rgb(45, 14, 64);
-               border-radius:19px;
-               }
+      }
 
-         li a{
-            text-decoration:none;
-            color:white;
-            font-size:18px;
+      #left_bar
+      {
+        background-color:rgba(0,0,0,0.35);
+        width:17%;
+        position:absolute;
+        margin-top:40px;
+        margin-left:12px;
+        padding:0px;
+        border:20px solid rgba(0,0,0,0.2);
+        border-radius:50px;
+
+      }
+
+      #link_head
+      {
+        text-align:center;
+        font-size:17pt;
+      }
+
+      body div ul li a
+      {
+        color:white;
+        text-decoration:none;
+        font-size:12pt;
+      }
+
+      a:hover
+      {
+                color:red;
             }
-          #company{
-                   color:white;
-                   font-size:60px;
-                   position:absolute;
-                   z-index:2;
-                   top:15px;
-                   left:800px;
-                   }
-          #link_head {
-                     font-size:30px;
-                     background-color:rgb(45, 14, 64);
-                     color:white;
-                     border:6px solid rgb(45, 14, 64);
-                     border-radius:66px;
-                     text-align:center;
 
-                     }
-          #left_bar{
-                    width:20%;
 
-                   }
-          a:hover{
-                  color:red;
-                 }
-          #common{
-                float:right;
-                position:absolute;
-                top:150px;
-                left:300px;
-                }
-           #internal_link{
-                        
-                        text-align:center;
-                        color:rgb(45, 14, 64);
-                        font-size:20px;
-                        
-                        
-                        }
-          #internal_link:hover{color:red;} 
-                 
-      </style>
-       
- </head>
+      
+    </style>
+  </head>
 
- <body>
-           
-          <p><em id="company">Explore Linux...</em></p><br>
-          <div id="left_bar">
-          <p id="link_head"><em>Useful Links</em></p>
-              <div id="links">
+  <body>
+    <a name="top">
+    </a>
+
+    <div id="left_bar">
+          <p id="link_head">Useful Links</p>
+              
                 <ul>
                        <li> <a href="index.html">Home</a><br></li>
                        <li> <a href="workspaces.html">WorkSpaces</a><br></li>
@@ -88,41 +81,37 @@
                        <li> <a href="alarm.html">Alarm using terminal</a><br></li>
                        
                 </ul>        
-              </div> 
-          </div>    
-          <div id="common">
-          <p style="font-size:20px;color:rgb(45, 14, 64);"><strong>Follow the below mentioned steps to auto hide launcher in Linux.</strong><br></p>
+              
+          </div>
+
+    <div id="container">
+
+    <p style="font-size:20px;"><strong>Follow the below mentioned steps to auto hide launcher in Linux.</strong><br></p>
           <ol>
             <li>Go to the top-right corner of the desktop and click on the username(In this case it is Saketh).Then select "System settings".<br>
-                  <img src="https://cloud.githubusercontent.com/assets/14980760/10864721/53fa051e-801d-11e5-8c15-dc67179a7d56.png" alt="1.Top-Right.png" style="width:800px;margin:30px;">
+                  <img src="https://cloud.githubusercontent.com/assets/17701040/14019358/67956a76-f1f8-11e5-8270-24c638812ae7.png" alt="1.Top-Right.png" style="width:800px;margin:30px;">
             </li>
             <li>A window appears.In that select "Appearance".
                  <img src="https://cloud.githubusercontent.com/assets/14980760/10864762/825ad176-801e-11e5-97e1-574959e568d8.png" alt="2.Appearance.png" style="width:800px;margin:30px;">
                   
             </li>
             <li>A window appears.In that select "Behaviour"(see the screenshot below).
-                <img src="https://cloud.githubusercontent.com/assets/14980760/10864764/88e8a45a-801e-11e5-98f8-cc57e5b34124.png" alt="3.Behaviour.png" style="width:800px;margin:30px;">
+                <img src="https://cloud.githubusercontent.com/assets/17701040/14019412/a57ba7a6-f1f8-11e5-9eda-5ba6c0df31b1.png" alt="3.Behaviour.png" style="width:800px;margin:30px;">
             </li>
             <li>Now "ON" the button as shown in the screenshot.
-                <img src="https://cloud.githubusercontent.com/assets/14980760/10865539/593dec90-8034-11e5-9447-66f3287a9c59.png" style="width:800px;margin:30px;">
+                <img src="https://cloud.githubusercontent.com/assets/17701040/14019435/c667c422-f1f8-11e5-9e39-33ebb345807c.png" style="width:800px;margin:30px;">
             </li>
             <li>Select "Left side" option(Ignore if already done) and then go to desktop.
-              <img src="https://cloud.githubusercontent.com/assets/14980760/10865575/6f6ca9b0-8035-11e5-80a0-5963aaec180c.png" style="width:800px;margin:30px;">
+              <img src="https://cloud.githubusercontent.com/assets/17701040/14019455/e3f483ae-f1f8-11e5-8e02-ae6f3394ac37.png" style="width:800px;margin:30px;">
             </li>
             <li>Now move the cursor vertically in the place of launcher(left most part of desktop) to see the launcher.</li>
            </ol>
-           <p style="margin:60px; text-align:center;"><a id="internal_link" href="#company">Go to top</a></p>
-           </div>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- explorelinux.github.io -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2565435688764536"
-     data-ad-slot="8466174208"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-       </body>       
+           <p style="margin:60px; text-align:center;"><a href="#top">Go to top</a></p>
+      </div>
+  </body>
+  
+
+
+
 
 </html>
