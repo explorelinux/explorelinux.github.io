@@ -1,136 +1,131 @@
 <!DOCTYPE html>
+
+
 <html>
- <head>
-  <meta charset="utf-8">
-   <title>workspaces.html</title>
+  <head>
+    <title>workspaces</title>
     <style>
+      body
+      {
+        font-size:15pt;
+        color:white;
+        font-family:cursive;
+        background-image:url(https://cloud.githubusercontent.com/assets/17701040/14021137/3a4300b2-f200-11e5-8f66-95264fbe0e9f.jpg);
+        background-size:1340px;
       
-         
+        background-attachment:fixed;
+      }
 
-         body{
-              border-top:90px solid rgb(45, 14, 64);
-              border-radius:30px;
-              background-color:rgb(187, 149, 214);
-              font-family:cursive;
-             }
-         #links{
-               
-               color:white;
-               background-color:rgb(45, 14, 64); 
-        
-               border:6px solid rgb(45, 14, 64);
-               border-radius:19px;
-               }
+      #container
+      {
+        background-color:rgba(0,0,0,0.35);
+        border:20px solid rgba(0,0,0,0.2);
+        border-radius:100px;
+        margin-left:300px;
+        margin-right:20px;
+        margin-top:80px;
+        padding:30px;
 
-            li a{
-            text-decoration:none;
-            color:white;
-            font-size:18px;
+      }
 
+      #left_bar
+      {
+        background-color:rgba(0,0,0,0.35);
+        width:17%;
+        position:absolute;
+        margin-top:40px;
+        margin-left:12px;
+        padding:0px;
+        border:20px solid rgba(0,0,0,0.2);
+        border-radius:50px;
+
+      }
+
+      #link_head
+      {
+        text-align:center;
+        font-size:17pt;
+      }
+
+      body div ul li a
+      {
+        color:white;
+        text-decoration:none;
+        font-size:12pt;
+      }
+
+      body div a
+      {
+        color:white;
+      }
+
+      a:hover
+      {
+                color:red;
             }
-          #company{
-                   color:white;
-                   font-size:60px;
-                   position:absolute;
-                   z-index:2;
-                   top:15px;
-                   left:800px;
-                   }
-          #link_head {
-                     font-size:30px;
-                     background-color:rgb(45, 14, 64);
-                     color:white;
-                     border:6px solid rgb(45, 14, 64);
-                     border-radius:66px;
-                     text-align:center;
 
-                     }
-          #left_bar{
-                    width:20%;
 
-                   }
-          a:hover{
-                  color:red;
-                 }
-          #workspaces{
-                      float:right;
-                      position:absolute;
-                      top:150px;
-                      left:300px;
-                     }
-      </style>
-       
- </head>
+      
+    </style>
+  </head>
 
- <body>
-           
-          <p><em id="company">Explore Linux...</em></p><br>
-          <div id="left_bar">
-          <p id="link_head"><em>Useful Links</em></p>
-              <div id="links">
+  <body>
+    <a name="top">
+    </a>
+
+    <div id="left_bar">
+          <p id="link_head">Useful Links</p>
+              
                 <ul>
                        <li> <a href="index.html">Home</a><br></li>
-                       <li> <a href="launcher.html">Launcher</a><br></li>
                        <li> <a href="software_centre.html">Software Centre</a><br></li>
+                       <li> <a href="launcher.html">Launcher</a><br></li>
+                       
                        
                        <li> <a href="bookmarks.html">Bookmarks</a><br></li>
                        <li> <a href="alarm.html">Alarm using terminal</a><br></li>
                        
                 </ul>        
-              </div> 
+              
           </div>
-      <div id="workspaces">
-          <p style="font-size:20px;color:rgb(45, 14, 64);"><strong>Follow the below mentioned steps to enable workspaces in Linux.</strong><br></p>
+
+    <div id="container">
+
+    
+      <p style="font-size:20px;"><strong>Follow the below mentioned steps to enable workspaces in Linux.</strong><br></p>
           <ol>
             <li>Go to the top-right corner of the desktop and click on the username(In this case it is Saketh).Then select "System settings".<br>
-                  <img src="https://cloud.githubusercontent.com/assets/14980760/10864721/53fa051e-801d-11e5-8c15-dc67179a7d56.png" alt="1.Top-Right.png" style="width:800px;margin:30px;">
+                  <img src="https://cloud.githubusercontent.com/assets/17701040/14021188/76fb04d2-f200-11e5-8089-b8e27380d2a4.png" alt="1.Top-Right.png" style="width:800px;margin:30px;">
             </li>
             <li>A window appears.In that select "Appearance".
-                 <img src="https://cloud.githubusercontent.com/assets/14980760/10864762/825ad176-801e-11e5-97e1-574959e568d8.png" alt="2.Appearance.png" style="width:800px;margin:30px;">
+                 <img src="https://cloud.githubusercontent.com/assets/17701040/14021206/8d0e054e-f200-11e5-87c0-929825cb4381.png" alt="2.Appearance.png" style="width:800px;margin:30px;">
                   
             </li>
             <li>A window appears.In that select "Behaviour"(see the screenshot below).
-                <img src="https://cloud.githubusercontent.com/assets/14980760/10864764/88e8a45a-801e-11e5-98f8-cc57e5b34124.png" alt="3.Behaviour.png" style="width:800px;margin:30px;">
+                <img src="https://cloud.githubusercontent.com/assets/17701040/14021225/a3f47b76-f200-11e5-9d6d-3b48573a88c2.png" alt="3.Behaviour.png" style="width:800px;margin:30px;">
             </li>
             <li>Now click on the checkbox "Enable workspaces".
-              <img src="https://cloud.githubusercontent.com/assets/14980760/10864766/8cccbb4c-801e-11e5-8fed-daa43473f146.png" alt="4.Enable Workspaces.png" style="width:800px;margin:30px;">
+              <img src="https://cloud.githubusercontent.com/assets/17701040/14021242/ba38680c-f200-11e5-9ef2-7d84290af10f.png" alt="4.Enable Workspaces.png" style="width:800px;margin:30px;">
             </li>
             <li>Now close the window.On the launcher(The left most column on the desktop),click on the bottom most icon(see the screenshot)<br>
-                <img src="https://cloud.githubusercontent.com/assets/14980760/11116525/3214dc7c-8959-11e5-98aa-720d6623d28f.png" style="width:800px;margin:30px;">
+                <img src="https://cloud.githubusercontent.com/assets/17701040/14021265/d228c826-f200-11e5-9527-4bec1080e162.png" style="width:800px;margin:30px;">
             </li>
             <li>Four individual workspaces can be seen.
-              <img src="https://cloud.githubusercontent.com/assets/14980760/10864774/952b5f1e-801e-11e5-8b9a-42fa3783045c.png" alt="6.Workspace.png" style="width:800px;margin:30px;">
+              <img src="https://cloud.githubusercontent.com/assets/17701040/14021290/ec09817c-f200-11e5-9d81-99e01bc76467.png" alt="6.Workspace.png" style="width:800px;margin:30px;">
             </li>
             <li>To migrate from one workspace to another workspace,press "ctr + alt + arrow key" or click on the wokspace icon(Bottom most)on launcher(Left most column) and proceed.<br>
-              <img src="https://cloud.githubusercontent.com/assets/14980760/11116629/de6ef55c-8959-11e5-9f46-6bd07769f572.png" style="width:800px;margin:30px;">
+              <img src="https://cloud.githubusercontent.com/assets/17701040/14021324/0592cd60-f201-11e5-9ce8-40380d17bf0c.png" style="width:800px;margin:30px;">
             </li><br>
           </ol>  
-          <p style="margin:60px;text-align:center;"><a href="#company" style="font-size:20px;font-style:italic;">Go to top</a></p>
+          <center> <a href="#top" style="font-size:20px;">Go to top</a> </center>
+
+
 
       </div>
+  </body>
+  
 
 
 
-
-
-
-
-
-
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- explorelinux.github.io -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2565435688764536"
-     data-ad-slot="8466174208"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-
-       </body>       
 
 </html>
