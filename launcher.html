@@ -1,118 +1,115 @@
 <!DOCTYPE html>
+
+
 <html>
- <head>
-  <meta charset="utf-8">
-   <title>launcher.html</title>
-    <style>
-      
-         
+	<head>
+		<title>Image</title>
+		<style>
+			body
+			{
+				font-size:15pt;
+				color:white;
+				font-family:cursive;
+				background-image:url(https://cloud.githubusercontent.com/assets/17701040/14018982/891aab04-f1f6-11e5-9180-0897f7d94bdc.jpg);
+				background-size:1340px;
+				background-attachment:fixed;
+			}
 
-         body{
-              border-top:90px solid rgb(45, 14, 64);
-              border-radius:30px;
-              background-color:rgb(187, 149, 214);
-              font-family:cursive;
-             }
-         #links{
-               
-               color:white;
-               background-color:rgb(45, 14, 64); 
-               
-               border:6px solid rgb(45, 14, 64);
-               border-radius:19px;
-               }
+			body div a 
+			{
+				
+				color:white;
+			}
 
-         li a{
-            text-decoration:none;
-            color:white;
-            font-size:18px;
+			#container
+			{
+				position:absolute;
+				background-color:rgba(0,0,0,0.35);
+				border:20px solid rgba(0,0,0,0.2);
+				border-radius:100px;
+				left:300px;
+				right:20px;
+				top:80px;
+				padding-left:130px;
+				padding-right:30px;
+				padding-top:30px;
+				padding-bottom:30px;
+
+			}
+
+			#left_bar
+			{
+				background-color:rgba(0,0,0,0.35);
+				width:17%;
+				position:absolute;
+				top:130px;
+				left:12px;
+				padding:0px;
+				border:20px solid rgba(0,0,0,0.2);
+				border-radius:50px;
+
+			}
+
+			#link_head
+			{
+				text-align:center;
+				font-size:17pt;
+			}
+
+			body div ul li a
+			{
+				color:white;
+				text-decoration:none;
+				font-size:12pt;
+			}
+
+			a:hover
+			{
+                color:red;
             }
-          #company{
-                   color:white;
-                   font-size:60px;
-                   position:absolute;
-                   z-index:2;
-                   top:15px;
-                   left:800px;
-                   }
-          #link_head {
-                     font-size:30px;
-                     background-color:rgb(45, 14, 64);
-                     color:white;
-                     border:6px solid rgb(45, 14, 64);
-                     border-radius:66px;
-                     text-align:center;
 
-                     }
-          #left_bar{
-                    width:20%;
+			#launcher
+			{
+                z-index:2;
+                position:absolute;
+                top:150px;
+                left:350px;               
+            }
 
-                   }
-          a:hover{
-                  color:red;
-                 }
-          #launcher{
-                    float:right;
-                    position:absolute;
-                    top:180px;
-                    left:300px;
-                    margin-bottom:200px;
-                   }  
-          #text{
-                     float:right;
-                     position:absolute;
-                     top:180px;
-                    left:500px;
-                    
-                    }
-          .questions{
-                     font-size:30px;
-                     border-bottom:2px dashed rgb(45, 14, 64);
-                    color:rgb(45, 14, 64);
-                     }
-           .answers{
-                    position:relative;
-                    top:10px;
-                    
-                    font-size:20px;
-                   }
-           .answer_link{
-                        color:rgb(45, 14, 64);
-                        font-size:20px; 
-                        }
-           
-          #internal_link{
-                        
-                        
-                        color:rgb(45, 14, 64);
-                        font-size:20px;
-                        }
-          #internal_link:hover{color:red;}
-                              
+            .questions
+            {
+            	font-weight:bold;
+            	font-size:20px;
+            }             
 
-      </style>
-       
- </head>
 
- <body>
-           
-          <p><em id="company">Explore Linux...</em></p><br>
-          <div id="left_bar">
-          <p id="link_head"><em>Useful Links</em></p>
-              <div id="links">
+			
+		</style>
+	</head>
+
+	<body>
+		<a name="top">
+		</a>
+
+		<div id="left_bar">
+          <p id="link_head">Useful Links</p>
+              
                 <ul>
                        <li> <a href="index.html">Home</a><br></li>
                        <li> <a href="workspaces.html">WorkSpaces</a><br></li>
+                       <li> <a href="launcher.html">Launcher</a><br></li>
                        <li> <a href="software_centre.html">Software Centre</a><br></li>
                        
-                       <li> <a href="bookmarks.html">Bookmarks</a><br></li>
                        <li> <a href="alarm.html">Alarm using terminal</a><br></li>
                        
                 </ul>        
-              </div> 
-          </div> 
-          <img src="https://cloud.githubusercontent.com/assets/14980760/10864875/8d06e22e-8021-11e5-83bd-b2afad94b562.png" alt="Launcher" id="launcher">   
-         <div id="text">
+              
+          </div>
+
+         <img src="https://cloud.githubusercontent.com/assets/14980760/10864875/8d06e22e-8021-11e5-83bd-b2afad94b562.png" alt="Launcher" id="launcher">  
+
+         <div id="container"> 
+         
           <p class="questions">How to remove icons from launcher?</p>
           <p class="answers"><ol><li>Right click on an icon you want to remove from launcher. </li>
                                  <li>Select "Unlock from launcher."</li>
@@ -133,20 +130,15 @@
           <a href="launcher_answer_two.html" class="answer_link">Click here</a><br>
           <p class="questions">How to resize an icon present on launcher?</p>
           <a href="launcher_answer_three.html" class="answer_link">Click here</a>
-          <p style="margin:60px; text-align:center;"><a href="#company" id="internal_link">Go to top</a></p>
-         </div>
+          <p style="margin:60px; text-align:center;"><a href="#top" id="internal_link">Go to top</a></p>
+         
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- explorelinux.github.io -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2565435688764536"
-     data-ad-slot="8466174208"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+      
+      </div>
+	</body>
+	
 
-       </body>       
+
+
 
 </html>
