@@ -1,125 +1,356 @@
 <!DOCTYPE html>
 
-
 <html>
+
   <head>
-    <title>index</title>
+    <title>
+
+      index
+
+    </title>
+
     <style>
+      
       body
       {
-        font-size:15pt;
-        color:white;
-        font-family:cursive;
-        background-image:url(https://cloud.githubusercontent.com/assets/17701040/14017533/175a0210-f1ee-11e5-89d4-870e9a01cddf.jpg);
-        background-size:1340px;
-        background-width:800px;
-        background-attachment:fixed;
-      }
-
-      #container
-      {
-        background-color:rgba(0,0,0,0.35);
-        border:20px solid rgba(0,0,0,0.2);
-        border-radius:100px;
-        margin-left:300px;
-        margin-right:20px;
-        margin-top:80px;
-        padding:30px;
-        width:870px;
-      }
-
-      #container:hover
-      {
-        transition:background-color .5s ease-in;
-        background-color:rgba(0,0,0,0.6);
-      }
-
-      #left_bar
-      {
-        background-color:rgba(0,0,0,0.35);
-        width:17%;
+        height:100%;
+        width:100%;
         position:absolute;
-        margin-top:40px;
-        margin-left:12px;
-        padding:0px;
-        border:20px solid rgba(0,0,0,0.2);
-        border-radius:50px;
-        width:220px;
+        font-family:cursive;
+        background-color:#47d147;
+        padding:30px;
+
       }
 
-      #left_bar:hover
+      body:hover
+      {
+        
+        transition:background-color .5s ease-in;
+        background-color:#3399ff;
+        
+      }
+
+      #launcher
+      {
+        font-size:25px;
+        color:white;
+        text-align:center;
+        background-color:#8c8c8c;
+        position:absolute;
+        width:200px;
+        height:50px;
+        left:150px;
+        top:250px;
+        border:0px solid red;
+        border-radius:20px;
+        padding:20px;
+
+        
+      }
+
+      #launcher:hover
       {
         transition:background-color .5s ease-in;
-        background-color:rgba(0,0,0,0.6);
-
+        background-color:#990099;
+        animation:jittery .5s ease-in infinite ;
+        
       }
 
-      #link_head
+      #workspaces
       {
-        text-align:center;
-        font-size:17pt;
-      }
 
-      body div ul li a
-      {
+        font-size:25px;
         color:white;
-        text-decoration:none;
-        font-size:12pt;
+        text-align:center;
+        background-color:#8c8c8c;
+        position:absolute;
+        width:200px;
+        height:50px;
+        left:850px;
+        top:250px;
+        border:0px solid red;
+        border-radius:20px;
+        padding:20px;
+
       }
 
-      a:hover
+      #workspaces:hover
       {
-        transition:color .5s ease-in;
-        color:red;
+        transition:background-color .5s ease-in;
+        background-color:#00b33c;
+        animation:jittery .5s ease-in infinite ;
+        
       }
 
+      #misc
+      {
+
+        font-size:25px;
+        color:white;
+        text-align:center;
+        background-color:#8c8c8c;
+        position:absolute;
+        width:200px;
+        height:50px;
+        left:500px;
+        top:450px;
+        border:0px solid red;
+        border-radius:20px;
+        padding:20px;
+
+      }
+
+      #misc:hover
+      {
+        transition:background-color .5s ease-in;
+        background-color:#003366;
+        animation:jittery .5s ease-in infinite ;
+      }
+
+      #software
+      {
+
+        font-size:25px;
+        color:white;
+        text-align:center;
+        background-color:#8c8c8c;
+        position:absolute;
+        width:200px;
+        height:50px;
+        left:500px;
+        top:50px;
+        border:0px solid red;
+        border-radius:20px;
+        padding:20px;
+
+      }
+
+      #software:hover
+      {
+        transition:background-color .5s ease-in;
+        background-color:#ff9900;
+        animation:jittery .5s ease-in infinite ;
+        
+      }
+
+      #terminal
+      {
+
+        font-size:25px;
+        color:white;
+        text-align:center;
+        background-color:#8c8c8c;
+        position:absolute;
+        width:200px;
+        height:50px;
+        left:500px;
+        top:250px;
+        border:0px solid red;
+        border-radius:20px;
+        padding:20px;
+
+      }
+
+      #terminal:hover
+      {
+        transition:background-color .5s ease-in;
+        background-color:#000000;
+        animation:jittery .5s ease-in infinite ;
+        
+      }
 
       
+
+      #circle
+      {
+        width:90px;
+        height:90px;
+        position:absolute;
+        top:520px;
+        background-color:#ffcc00;
+        border-radius:50%;
+        animation:slide 2s infinite;
+      }
+
+      #circle:hover
+      {
+        background-color:#00994d;
+      }
+
+      #circle_2
+      {
+        width:90px;
+        height:90px;
+        position:absolute;
+        top:520px;
+        left:1180px;
+        background-color:#4d004d;
+        border-radius:50%;
+        animation:slide_2 2s infinite;
+      }
+
+      #circle_2:hover
+      {
+        background-color:#00994d;
+      }
+
+      #circle_3
+      {
+        width:90px;
+        height:90px;
+        position:absolute;
+        top:40px;
+        left:1180px;
+        background-color:#e65c00;
+        border-radius:50%;
+        animation:slide_3 2s infinite;
+      }
+
+      #circle_3:hover
+      {
+        background-color:#00994d;
+      }
+
+      #circle_4
+      {
+        width:90px;
+        height:90px;
+        position:absolute;
+        top:60px;
+        left:20px;
+        background-color:#800000;
+        border-radius:50%;
+        animation:slide_4 2s infinite;
+      }
+
+      #circle_4:hover
+      {
+        background-color:#00994d;
+      }
+
+      a
+      {
+        text-decoration:none;
+        color:white;
+
+      }
+
+      @keyframes jittery
+      {
+        10%
+        {
+          transform:translate3d(3px,-3px,0px) scale3d(1.01,1.01,0);
+        }
+        
+      }
+
+      @keyframes slide
+      {
+        0%
+        {
+          transform:translate3d(0px,0px,0px);
+        }
+
+        50%
+        {
+          transform:translate3d(380px,-150px,0px);
+          opacity:0.3;
+        }
+
+        100px
+        {
+          transform:translate3d(0px,0px,0px);
+        }
+      }
+
+
+      @keyframes slide_2
+      {
+        0%
+        {
+          transform:translate3d(0px,0px,0px);
+        }
+
+        50%
+        {
+          transform:translate3d(-440px,-150px,0px);
+          opacity:0.3;
+        }
+
+        100px
+        {
+          transform:translate3d(0px,0px,0px);
+        }
+      }
+
+      @keyframes slide_3
+      {
+        0%
+        {
+          transform:translate3d(0px,0px,0px);
+        }
+
+        50%
+        {
+          transform:translate3d(-440px,130px,0px);
+          opacity:0.3;
+        }
+
+        100px
+        {
+          transform:translate3d(0px,0px,0px);
+        }
+      }
+
+      @keyframes slide_4
+      {
+        0%
+        {
+          transform:translate3d(0px,0px,0px);
+        }
+
+        50%
+        {
+          transform:translate3d(400px,120px,0px);
+          opacity:0.8;
+        }
+
+        100px
+        {
+          transform:translate3d(0px,0px,0px);
+        }
+      }
+  
+
+      
+
     </style>
+
+
   </head>
+
+  
 
   <body>
 
-    <div id="left_bar">
-          <p id="link_head">Useful Links</p>
-              
-                <ul>
-                       <li> <a href="workspaces.html">WorkSpaces</a><br></li>
-                       <li> <a href="launcher.html">Launcher</a><br></li>
-                       <li> <a href="software_centre.html">Software Centre</a><br></li>
-                       
-                       <li> <a href="bookmarks.html">Bookmarks</a><br></li>
-                       <li> <a href="alarm.html">Alarm using terminal</a><br></li>
-                       
-                </ul>        
-              
-          </div>
+    
+      <p id="software"><a href="software_centre.html">Software Center</a></p>
+      <p id="terminal"><a href="alarm.html">Terminal</a></p>
+      <p id="launcher"><a href="launcher.html">Launcher</a></p>
+      <p id="workspaces"><a href="workspaces.html">Workspaces</a></p>
+      <p id="misc"><a href="bookmarks.html">Misc.</a></p>
 
-    <div id="container">
+      <div id="circle"></div>
+      <div id="circle_2"></div>
+      <div id="circle_3"></div>
+      <div id="circle_4"></div>
 
-    <h1 style="text-align:center;">Advantages of Linux over Windows</h1>  
-          <p><ul style="margin-top:80px;"><li>Linux is free to install as it is an opensource software.To install windows we should purchase it.
-                                      </li><br>
-                                      <li>The security aspect of Linux is much stronger than that of Windows.Why should we spend extra money on Anti-Virus?
-                                      </li><br>
-                                      <li>In linux you have power to control every aspect of Operating system.
-                                      </li><br>
-                                      <li>Because of its opensource nature regular users and programmers contribute applications all the time.
-                                      </li><br>
-                                      <li>With linux you are not only getting the software for free but also you have an option to edit the source code to add additional features.
-                                      </li><br>
-                                      <li>If an application terminates in Windows then it affects other applications(Sometimes it disables other applications).But in Linux all applications are independent.
-                                      </li><br>
-                                      
-                            
+  <script src="https://github.com/explorelinux/explorelinux.github.io/blob/b98f755c9d8d53e681115c2d7c7e896d3e062b01/prefixfree.min.js">     </script>
+    
 
-            </ul>
-          </p>  
-      </div>
+
   </body>
+
   
-
-
-
 
 </html>
